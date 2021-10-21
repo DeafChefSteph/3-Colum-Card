@@ -1,0 +1,89 @@
+:root{
+    --leftCardBG: hsl(31, 77%, 52%);
+    --midleCardBG: hsl(184, 100%, 22%);
+    --rightCardBG: hsl(179, 100%, 13%);
+
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGray: hsl(0, 0%, 95%); 
+}
+
+p{
+    color: var(--transparentWhite);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 3rem; 
+    margin-right: 4rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+h2{
+    color: var(--lightGray);
+    margin: 1.5rem;
+    margin-left: 3rem; 
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+
+#mainContent{
+    margin: auto;
+    margin-top: 8rem;
+    width: 60%;
+    height: 50%;
+
+    display: flex;
+}
+
+
+
+#leftCard{
+    background-color: var(--leftCardBG); 
+}
+#middleCard{
+    background-color: var(--midleCardBG); 
+}
+#rightCard{
+    background-color: var(--rightCardBG); 
+}
+
+.carIcon{
+    margin: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.learnMoreButton{
+    margin: 40px;
+    margin-left: 40px;
+    background-color: var(--lightGray);
+    height: 40px;
+    width: 50%;
+    border: var(--lightGray);
+    border-radius: 20px;
+    
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px){
+    #mainContent{
+        margin: auto;
+        margin-top: 3rem; 
+        margin-bottom: 3rem;
+        width: 300px;
+        flex-direction: column;
+        
+    }
+    .slider{
+        width:300px;
+    }
+
+
+}
